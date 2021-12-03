@@ -4,51 +4,51 @@ using System.Text;
 
 namespace GenricsDemo
 {
-    public class MaximumComputation
+    class MaximumOfThree
     {
-        public static int FindMax(int firstNumber, int secondNumber, int thirdNumber)
+        public static int MaxInt(int first, int second, int third)
         {
-            if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                return firstNumber;
+                return first;
             }
-            if (secondNumber.CompareTo(firstNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
+            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0)
             {
-                return secondNumber;
+                return second;
             }
             else
             {
-                return thirdNumber;
+                return third;
             }
         }
-        public static double FindMax(double firstNumber, double secondNumber, double thirdNumber)
+        public static double MaxFloat(double first, double second, double third)
         {
-            if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                return firstNumber;
+                return first;
             }
-            if (secondNumber.CompareTo(firstNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
+            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0)
             {
-                return secondNumber;
+                return second;
             }
             else
             {
-                return thirdNumber;
+                return third;
             }
         }
-        public static string FindMax(string firstWord, string secondWord, string thirdWord)
+        public static string MaxString(string first, string second, string third)
         {
-            if (firstWord.Length > secondWord.Length && firstWord.Length > thirdWord.Length)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                return firstWord;
+                return first;
             }
-            if (secondWord.Length > firstWord.Length && secondWord.Length > thirdWord.Length)
+            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0)
             {
-                return secondWord;
+                return second;
             }
             else
             {
-                return thirdWord;
+                return third;
             }
         }
     }
